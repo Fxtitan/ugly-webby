@@ -1,10 +1,10 @@
 h1 {
-    color: #111;
+    color:palegreen;
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 275px;
+    font-size: 50px;
     font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1;
+    letter-spacing: 100px;
+    line-height: 2;
     text-align: center;
 }
 
@@ -50,3 +50,9 @@ input, textarea {
     padding:5px;
     margin:5px
 }
+
+body {
+    background-image: url("https://media1.tenor.com/images/732c8523a3ce0cc7f80c0301dd8479a5/tenor.gif?itemid=4172627");
+    background-color: #cccccc;
+   }
+

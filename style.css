@@ -56,3 +56,87 @@ body {
     background-color: #cccccc;
    }
 
+   @keyframes banner{
+    0% { background-position: 0% 0%}
+    18% {background-position: 0% -100%}
+    36% {background-position: 0% -200%}
+    54% {background-position: 0% -300%}
+    72% {background-position: 0% -400%}
+    100% {background-position: 0% -500%}}
+    
+    body{background-image: url("https://media1.tenor.com/images/732c8523a3ce0cc7f80c0301dd8479a5/tenor.gif?itemid=4172627");
+    animation-name: banner;
+    animation-duration: 20s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    perspective: 1000;
+    background-attachment: fixed;
+
+    }
+
+    ul {
+        color:rgb(0, 3, 0);
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 100px;
+        line-height: 2;
+        text-align: center;
+    }
+
+    ol {
+        text-align: center;
+        color: rgb(255, 0, 255);
+      }
+
+      #paper {
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 251, 0);
+        position: relative;
+        animation: mymove 1s infinite;
+      }
+      
+      @keyframes mymove {
+        from {left: 0px;}
+        to {left: 200px;}
+      }
+
+
+
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        transform: rotate(-5deg);
+        background: radial-gradient(center, crimson, darken(crimson, 60%));
+      }
+       #lettuce{
+        absolute: top 0 left 0 right 0 bottom 0;
+        text-shadow: 3px 3px 3px rgba(black, 0.5);
+        .top, .bot {
+          text-align: center;
+          font: 62px/100px arial;
+          text-transform: uppercase;
+          text-align: center;
+          overflow: hidden;
+          color: white;
+          &:before {
+            content: attr(title);
+            transform: rotate(5deg);
+          }
+        }
+         {
+          absolute: top 0 left 5px right 0 bottom 50%;
+          &:before {
+            absolute: bottom -50px left 0 right 0;
+          }
+        }
+        .bot {
+          absolute: top 50% left 0 right 5px bottom 0;
+          &:before {
+            absolute: top -50px left 0 right 0;
+          }
+        }
+      }
